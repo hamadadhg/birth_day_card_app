@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/cubits/birth_day_cubit/birth_day_cubit.dart';
 import 'package:birthday_card_app/simple_bloc_observer.dart';
 import 'package:birthday_card_app/views/birth_day_view.dart';
@@ -32,3 +33,4 @@ class BirthDayCardApp extends StatelessWidget {
     );
   }
 }
+*/
