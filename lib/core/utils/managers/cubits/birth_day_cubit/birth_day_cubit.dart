@@ -1,17 +1,10 @@
-import 'package:birthday_card_app/core/utils/managers/cubits/birth_day_cubit/birth_day_state.dart';
-import 'package:birthday_card_app/features/party/presentation/views/party_view.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class BirthDayCubit extends Cubit<BirthDayState> {
-  BirthDayCubit()
-      : super(
-          InitialState(),
-        );
-  String? name;
-  void navigateMethod({required BuildContext context}) {
-    emit(
-      SuccessState(),
-    );
+class BirthDayCubit extends Cubit<String> {
+  //the state is String because i need to deal with String variable
+  BirthDayCubit() : super('');
+  void getAndGiveTheName({required String name}) {
+    emit(name);
+//name variable will take value it from TextField and emit(so will give you in BirthDayView)
   }
 }

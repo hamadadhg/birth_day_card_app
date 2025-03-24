@@ -4,8 +4,8 @@ import 'package:birthday_card_app/core/utils/styles/style_to_colors.dart';
 import 'package:birthday_card_app/core/utils/styles/style_to_texts.dart';
 import 'package:flutter/material.dart';
 
-class CustomTextFormFieldWidget extends StatelessWidget {
-  const CustomTextFormFieldWidget({
+class CustomTextFieldWidget extends StatelessWidget {
+  const CustomTextFieldWidget({
     super.key,
     required this.onChanged,
     required this.onEditingComplete,
@@ -14,9 +14,10 @@ class CustomTextFormFieldWidget extends StatelessWidget {
   final void Function()? onEditingComplete;
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
+    return TextField(
       onChanged: onChanged,
       onEditingComplete: onEditingComplete,
+      //this attribute to ensure you're finish from write on keyboard and click enter
       cursorColor: StyleToColors.whiteColor,
       style: StyleToTexts.textStyle16.copyWith(
         fontSize: responsiveSizeToText(

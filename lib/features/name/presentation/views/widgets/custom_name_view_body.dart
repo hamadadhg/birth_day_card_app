@@ -3,7 +3,7 @@ import 'package:birthday_card_app/core/utils/helpers/push_go_router_helper.dart'
 import 'package:birthday_card_app/core/utils/helpers/responsive_size_to_text.dart';
 import 'package:birthday_card_app/core/utils/managers/cubits/birth_day_cubit/birth_day_cubit.dart';
 import 'package:birthday_card_app/core/utils/styles/style_to_texts.dart';
-import 'package:birthday_card_app/features/name/presentation/views/widgets/custom_text_form_field_widget.dart';
+import 'package:birthday_card_app/features/name/presentation/views/widgets/custom_text_field_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -13,6 +13,7 @@ class CustomNameViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.sizeOf(context);
+    String? name;
     return Padding(
       padding: EdgeInsets.symmetric(
         horizontal: size.width * 0.025,
@@ -32,13 +33,13 @@ class CustomNameViewBody extends StatelessWidget {
           SizedBox(
             height: size.height * 0.035,
           ),
-          CustomTextFormFieldWidget(
+          CustomTextFieldWidget(
             onChanged: (value) {
-              context.read<BirthDayCubit>().name = value;
+              name = value;
+              context.read<BirthDayCubit>().getAndGiveTheName(name: name!);
             },
             onEditingComplete: () {
-              String? value = context.read<BirthDayCubit>().name;
-              if (value != '' && value != null) {
+              if (name != '' && name != null) {
                 pushGoRouterHelper(
                   context: context,
                   view: kPartyView,
