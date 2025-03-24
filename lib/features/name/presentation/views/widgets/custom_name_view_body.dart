@@ -1,11 +1,12 @@
+import 'package:birthday_card_app/core/utils/helpers/push_go_router_helper.dart';
 import 'package:birthday_card_app/core/utils/managers/cubits/birth_day_cubit/birth_day_cubit.dart';
 import 'package:birthday_card_app/features/name/presentation/views/widgets/custom_text_form_field_widget.dart';
 import 'package:birthday_card_app/core/utils/components/custom_text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CustomNameWidget extends StatelessWidget {
-  const CustomNameWidget({super.key});
+class CustomNameViewBody extends StatelessWidget {
+  const CustomNameViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +26,11 @@ class CustomNameWidget extends StatelessWidget {
           CustomTextFormFieldWidget(
             onChanged: (value) {
               context.read<BirthDayCubit>().name = value;
-            },
-            onEditingComplete: () {
-              BlocProvider.of<BirthDayCubit>(context).navigateMethod(
-                context: context,
-              );
+              if (value != '') {
+                pushGoRouterHelper(
+                  context: context,
+                );
+              }
             },
           ),
         ],

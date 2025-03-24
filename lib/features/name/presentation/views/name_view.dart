@@ -1,8 +1,8 @@
-import 'package:birthday_card_app/core/utils/components/custom_name_widget.dart';
+import 'package:birthday_card_app/features/name/presentation/views/widgets/custom_name_view_body.dart';
 import 'package:flutter/material.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class NameView extends StatelessWidget {
+  const NameView({super.key});
   static String homeViewId = 'HomeView';
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
       backgroundColor: Color(
         0xff23272E,
       ),
-      body: CustomNameWidget(),
+      body: CustomNameViewBody(),
     );
   }
 }

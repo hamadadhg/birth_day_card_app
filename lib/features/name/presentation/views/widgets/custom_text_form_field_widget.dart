@@ -6,15 +6,12 @@ class CustomTextFormFieldWidget extends StatelessWidget {
   const CustomTextFormFieldWidget({
     super.key,
     required this.onChanged,
-    required this.onEditingComplete,
   });
   final void Function(String)? onChanged;
-  final void Function()? onEditingComplete;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       onChanged: onChanged,
-      onEditingComplete: onEditingComplete,
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'The Field Is Required';
