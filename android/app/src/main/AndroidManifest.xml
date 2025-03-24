@@ -2,7 +2,7 @@
     <application
         android:label="Happy Birthday"
         android:name="${applicationName}"
-        android:icon="@mipmap/cake_birthday_image">
+        android:icon="@mipmap/cake_birthday">
         <activity
             android:name=".MainActivity"
             android:exported="true"

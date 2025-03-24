@@ -1,0 +1,2 @@
+C:/src/Flutter Projects/Birth Day Card/birthday_card_app/android/app/.cxx/RelWithDebInfo/3r503031/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/src/Flutter Projects/Birth Day Card/birthday_card_app/android/app/.cxx/RelWithDebInfo/3r503031/armeabi-v7a/CMakeFiles/rebuild_cache.dir
