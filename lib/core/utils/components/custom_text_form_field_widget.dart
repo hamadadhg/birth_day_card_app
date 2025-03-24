@@ -1,5 +1,5 @@
-import 'package:birthday_card_app/Helpers/outline_input_border_helper.dart';
-import 'package:birthday_card_app/constant.dart';
+import 'package:birthday_card_app/core/utils/helpers/outline_input_border_helper.dart';
+import 'package:birthday_card_app/core/utils/styles/style_to_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormFieldWidget extends StatelessWidget {
@@ -21,9 +21,9 @@ class CustomTextFormFieldWidget extends StatelessWidget {
         }
         return null;
       },
-      cursorColor: kWhiteColor,
+      cursorColor: StyleToColors.kWhiteColor,
       style: const TextStyle(
-        color: kWhiteColor,
+        color: StyleToColors.kWhiteColor,
       ),
       decoration: InputDecoration(
         errorStyle: const TextStyle(
@@ -37,8 +37,8 @@ class CustomTextFormFieldWidget extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
         floatingLabelAlignment: FloatingLabelAlignment.center,
-        floatingLabelStyle: const TextStyle(
-          color: kWhiteColor,
+        floatingLabelStyle: TextStyle(
+          color: StyleToColors.kWhiteColor,
           fontSize: 20,
         ),
       ),

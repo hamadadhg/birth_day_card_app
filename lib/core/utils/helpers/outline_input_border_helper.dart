@@ -1,4 +1,4 @@
-import 'package:birthday_card_app/constant.dart';
+import 'package:birthday_card_app/core/utils/styles/style_to_colors.dart';
 import 'package:flutter/material.dart';
 
 OutlineInputBorder outlineInputBorderHelper() {
@@ -6,8 +6,8 @@ OutlineInputBorder outlineInputBorderHelper() {
     borderRadius: BorderRadius.circular(
       15,
     ),
-    borderSide: const BorderSide(
-      color: kWhiteColor,
+    borderSide: BorderSide(
+      color: StyleToColors.kWhiteColor,
     ),
   );
 }
