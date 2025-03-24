@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:birthday_card_app/views/birth_day_view.dart';
+import 'package:birthday_card_app/features/birth_day/presentation/views/birth_day_view.dart';
 import 'package:birthday_card_app/core/utils/components/custom_text_widget.dart';
 import 'package:flutter/material.dart';
 
