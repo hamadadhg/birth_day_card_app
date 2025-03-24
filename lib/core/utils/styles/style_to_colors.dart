@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
 abstract class StyleToColors {
-  static const Color kWhiteColor = Colors.white;
+  static const Color whiteColor = Colors.white;
 }

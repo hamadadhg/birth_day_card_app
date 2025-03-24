@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 class NameView extends StatelessWidget {
   const NameView({super.key});
-  static String homeViewId = 'HomeView';
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

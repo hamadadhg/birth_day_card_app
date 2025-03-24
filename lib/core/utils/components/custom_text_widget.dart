@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class CustomTextWidget extends StatelessWidget {
   const CustomTextWidget({
     super.key,
-    this.color = StyleToColors.kWhiteColor,
+    this.color = StyleToColors.whiteColor,
     required this.text,
     this.fontSize = 25,
     this.fontFamily = '',
