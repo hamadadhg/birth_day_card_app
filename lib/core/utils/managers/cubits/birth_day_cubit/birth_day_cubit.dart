@@ -10,14 +10,8 @@ class BirthDayCubit extends Cubit<BirthDayState> {
         );
   String? name;
   void navigateMethod({required BuildContext context}) {
-    if (name != '' && name != null) {
-      Navigator.pushNamed(
-        context,
-        PartyView.partyViewId,
-      );
-      emit(
-        SuccessState(),
-      );
-    }
+    emit(
+      SuccessState(),
+    );
   }
 }

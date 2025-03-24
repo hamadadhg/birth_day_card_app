@@ -1,11 +1,10 @@
-import 'dart:async';
-import 'package:birthday_card_app/features/birth_day/presentation/views/birth_day_view.dart';
-import 'package:birthday_card_app/core/utils/components/custom_text_widget.dart';
+import 'package:birthday_card_app/core/utils/styles/style_to_colors.dart';
+import 'package:birthday_card_app/features/party/presentation/views/widgets/background_color_party_view.dart';
+import 'package:birthday_card_app/features/party/presentation/views/widgets/custom_party_view_body.dart';
 import 'package:flutter/material.dart';
 
 class PartyView extends StatefulWidget {
   const PartyView({super.key});
-  static String partyViewId = 'PartyView';
 
   @override
   State<PartyView> createState() => _PartyViewState();
@@ -14,58 +13,18 @@ class PartyView extends StatefulWidget {
 class _PartyViewState extends State<PartyView> {
   @override
   void initState() {
-    Timer(
-      const Duration(
-        seconds: 5,
-      ),
-      () {
-        Navigator.pushNamed(
-          context,
-          BirthDayView.birthDayViewId,
-        );
-      },
-    );
+    // routerWithTimerHelper(
+    //   context: context,
+    // );
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(
-        0xffAE0000,
-      ).withValues(
-        alpha: 0.7,
-      ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            'assets/gif/party_gif.webp',
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          const CustomTextWidget(
-            text: 'Today , There Is',
-            fontSize: 50,
-            fontFamily: 'Dancing Script',
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          const CustomTextWidget(
-            text: 'A Party',
-            fontSize: 50,
-            fontFamily: 'Dancing Script',
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          const CustomTextWidget(
-            text: '🥳',
-            fontSize: 50,
-          ),
-        ],
+    return BackgroundColorPartyView(
+      child: Scaffold(
+        backgroundColor: StyleToColors.transparentColor,
+        body: CustomPartyViewBody(),
       ),
     );
   }
