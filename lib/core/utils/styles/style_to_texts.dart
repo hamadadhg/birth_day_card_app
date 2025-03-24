@@ -15,4 +15,8 @@ abstract class StyleToTexts {
     fontFamily: 'Dancing Script',
     color: StyleToColors.whiteColor,
   );
+  static const TextStyle textStyle48 = TextStyle(
+    fontFamily: 'Dancing Script',
+    color: StyleToColors.deepYellowColor,
+  );
 }

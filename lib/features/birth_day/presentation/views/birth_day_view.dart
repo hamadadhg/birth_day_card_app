@@ -1,9 +1,6 @@
-import 'package:birthday_card_app/core/utils/images/asset_images/asset_images.dart';
-import 'package:birthday_card_app/core/utils/managers/cubits/birth_day_cubit/birth_day_cubit.dart';
-import 'package:birthday_card_app/core/utils/managers/cubits/birth_day_cubit/birth_day_state.dart';
-import 'package:birthday_card_app/core/utils/components/custom_text_widget.dart';
+import 'package:birthday_card_app/core/utils/styles/style_to_colors.dart';
+import 'package:birthday_card_app/features/birth_day/presentation/views/widgets/custom_birthday_view_body.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BirthDayView extends StatelessWidget {
   const BirthDayView({super.key});
@@ -12,42 +9,8 @@ class BirthDayView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(
-        0xff202020,
-      ),
-      body: Column(
-        children: [
-          Image.asset(
-            AssetImages.happyBirthdayImage,
-          ),
-        ],
-      ),
-      // body: Padding(
-      //   padding: const EdgeInsets.symmetric(
-      //     horizontal: 15,
-      //   ),
-      //   child: Column(
-      //     children: [
-      //       Image.asset(
-      //         'assets/gif/birth_day_gif.webp',
-      //       ),
-      //       const SizedBox(
-      //         height: 30,
-      //       ),
-      //       BlocBuilder<BirthDayCubit, BirthDayState>(
-      //         builder: (context, state) {
-      //           return CustomTextWidget(
-      //             text: 'for  ${context.read<BirthDayCubit>().name}',
-      //             textCase: true,
-      //             color: const Color(
-      //               0xff145386,
-      //             ),
-      //           );
-      //         },
-      //       ),
-      //     ],
-      //   ),
-      // ),
+      backgroundColor: StyleToColors.mediumBlackColor,
+      body: CustomBirthdayViewBody(),
     );
   }
 }
