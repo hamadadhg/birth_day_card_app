@@ -1,3 +1,4 @@
+import 'package:birthday_card_app/core/utils/images/asset_images/asset_images.dart';
 import 'package:birthday_card_app/core/utils/managers/cubits/birth_day_cubit/birth_day_cubit.dart';
 import 'package:birthday_card_app/core/utils/managers/cubits/birth_day_cubit/birth_day_state.dart';
 import 'package:birthday_card_app/core/utils/components/custom_text_widget.dart';
@@ -12,7 +13,14 @@ class BirthDayView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(
-        0xff9933FF,
+        0xff202020,
+      ),
+      body: Column(
+        children: [
+          Image.asset(
+            AssetImages.happyBirthdayImage,
+          ),
+        ],
       ),
       // body: Padding(
       //   padding: const EdgeInsets.symmetric(
