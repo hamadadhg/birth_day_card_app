@@ -14,32 +14,32 @@ class BirthDayView extends StatelessWidget {
       backgroundColor: const Color(
         0xff9933FF,
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 15,
-        ),
-        child: Column(
-          children: [
-            Image.asset(
-              'assets/gif/birth_day_gif.webp',
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            BlocBuilder<BirthDayCubit, BirthDayState>(
-              builder: (context, state) {
-                return CustomTextWidget(
-                  text: 'for  ${context.read<BirthDayCubit>().name}',
-                  textCase: true,
-                  color: const Color(
-                    0xff145386,
-                  ),
-                );
-              },
-            ),
-          ],
-        ),
-      ),
+      // body: Padding(
+      //   padding: const EdgeInsets.symmetric(
+      //     horizontal: 15,
+      //   ),
+      //   child: Column(
+      //     children: [
+      //       Image.asset(
+      //         'assets/gif/birth_day_gif.webp',
+      //       ),
+      //       const SizedBox(
+      //         height: 30,
+      //       ),
+      //       BlocBuilder<BirthDayCubit, BirthDayState>(
+      //         builder: (context, state) {
+      //           return CustomTextWidget(
+      //             text: 'for  ${context.read<BirthDayCubit>().name}',
+      //             textCase: true,
+      //             color: const Color(
+      //               0xff145386,
+      //             ),
+      //           );
+      //         },
+      //       ),
+      //     ],
+      //   ),
+      // ),
     );
   }
 }

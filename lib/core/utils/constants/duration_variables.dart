@@ -1,3 +1,3 @@
-const Duration kFiveSeconds = Duration(
-  seconds: 5,
+const Duration kOneSeconds = Duration(
+  seconds: 3,
 );
