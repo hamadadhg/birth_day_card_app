@@ -1,4 +1,3 @@
-/*
 import 'dart:async';
 import 'package:birthday_card_app/views/birth_day_view.dart';
 import 'package:birthday_card_app/widgets/custom_text_widget.dart';
@@ -71,4 +70,3 @@ class _PartyViewState extends State<PartyView> {
     );
   }
 }
-*/

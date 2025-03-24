@@ -1,4 +1,3 @@
-/*
 import 'package:birthday_card_app/constant.dart';
 import 'package:flutter/material.dart';
 
@@ -28,4 +27,3 @@ class CustomTextWidget extends StatelessWidget {
     );
   }
 }
-*/
