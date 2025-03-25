@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/core/utils/constants/string_variables.dart';
 import 'package:birthday_card_app/features/birth_day/presentation/views/birth_day_view.dart';
 import 'package:birthday_card_app/features/name/presentation/views/name_view.dart';
@@ -22,3 +23,4 @@ abstract class AppRouter {
     ],
   );
 }
+*/

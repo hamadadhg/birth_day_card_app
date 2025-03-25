@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/features/birth_day/presentation/views/widgets/custom_birthday_image.dart';
 import 'package:birthday_card_app/features/birth_day/presentation/views/widgets/custom_birthday_text.dart';
 import 'package:flutter/material.dart';
@@ -25,3 +26,4 @@ class CustomBirthdayViewBody extends StatelessWidget {
     );
   }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/features/party/presentation/views/widgets/custom_image_party.dart';
 import 'package:birthday_card_app/features/party/presentation/views/widgets/custom_text_party.dart';
 import 'package:flutter/material.dart';
@@ -33,3 +34,4 @@ class CustomPartyViewBody extends StatelessWidget {
     );
   }
 }
+*/

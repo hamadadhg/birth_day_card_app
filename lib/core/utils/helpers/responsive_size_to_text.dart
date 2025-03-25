@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/core/utils/helpers/get_scale_factor_helper.dart';
 import 'package:flutter/material.dart';
 
@@ -12,3 +13,4 @@ double responsiveSizeToText(
     upperLimit,
   );
 }
+*/

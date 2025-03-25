@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/core/utils/images/asset_images/asset_images.dart';
 import 'package:flutter/material.dart';
 
@@ -24,3 +25,4 @@ class CustomImageParty extends StatelessWidget {
     );
   }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 
 class BackgroundColorPartyView extends StatelessWidget {
@@ -28,3 +29,4 @@ class BackgroundColorPartyView extends StatelessWidget {
     );
   }
 }
+*/

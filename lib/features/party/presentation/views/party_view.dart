@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/core/utils/helpers/timer_with_router_helper.dart';
 import 'package:birthday_card_app/core/utils/styles/style_to_colors.dart';
 import 'package:birthday_card_app/features/party/presentation/views/widgets/background_color_party_view.dart';
@@ -31,3 +32,4 @@ class _PartyViewState extends State<PartyView> {
     );
   }
 }
+*/

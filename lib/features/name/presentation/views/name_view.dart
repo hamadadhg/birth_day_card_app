@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/core/utils/styles/style_to_colors.dart';
 import 'package:birthday_card_app/features/name/presentation/views/widgets/custom_name_view_body.dart';
 import 'package:flutter/material.dart';
@@ -12,3 +13,4 @@ class NameView extends StatelessWidget {
     );
   }
 }
+*/

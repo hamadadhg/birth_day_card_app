@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 
 abstract class StyleToColors {
@@ -7,3 +8,4 @@ abstract class StyleToColors {
   static const Color mediumBlackColor = Color(0xff111111);
   static const Color deepYellowColor = Color(0xffFDD06B);
 }
+*/

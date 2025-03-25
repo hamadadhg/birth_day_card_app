@@ -1,3 +1,4 @@
+/*
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BirthDayCubit extends Cubit<String> {
@@ -8,3 +9,4 @@ class BirthDayCubit extends Cubit<String> {
 //name variable will take value it from TextField and emit(so will give you in BirthDayView)
   }
 }
+*/

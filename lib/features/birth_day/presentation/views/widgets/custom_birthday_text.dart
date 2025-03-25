@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/core/utils/helpers/responsive_size_to_text.dart';
 import 'package:birthday_card_app/core/utils/managers/cubits/birth_day_cubit/birth_day_cubit.dart';
 import 'package:birthday_card_app/core/utils/styles/style_to_texts.dart';
@@ -24,3 +25,4 @@ class CustomBirthdayText extends StatelessWidget {
     );
   }
 }
+*/

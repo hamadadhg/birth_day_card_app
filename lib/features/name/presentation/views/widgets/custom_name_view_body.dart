@@ -1,3 +1,4 @@
+/*
 import 'package:birthday_card_app/core/utils/constants/string_variables.dart';
 import 'package:birthday_card_app/core/utils/helpers/push_go_router_helper.dart';
 import 'package:birthday_card_app/core/utils/helpers/responsive_size_to_text.dart';
@@ -52,3 +53,4 @@ class CustomNameViewBody extends StatelessWidget {
     );
   }
 }
+*/
